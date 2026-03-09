@@ -1,7 +1,7 @@
 const DOM8787 = {
     'metadata': {
         'version': '0.0.1',
-        'versionNum': 1
+        'versionN': 1
     },
     'create': async (d) => {
         return {
