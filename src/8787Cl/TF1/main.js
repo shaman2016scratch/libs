@@ -15,16 +15,21 @@ const tf1 = {
                     'planer': {
                         'name': 'planer',
                         'version': '0.0.1',
-                        'pkg': []
+                        'pkg': [],
+                        'data': tf1planer,
                     },
                     'filesEmulator': {
                         'name': 'Files Emulator',
                         'version': '0.0.1',
-                        'pkg': []
-                    }
+                        'pkg': [],
+                        'data': tf1filesEmulator
+                    },
                 },
-                'list': [],
-                'installed': []
+                'list': [
+                    'planer',
+                    'filesEmulator',
+                ],
+                'installed': [],
             }
         }
         if (!window) {
