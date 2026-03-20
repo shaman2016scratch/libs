@@ -1,5 +1,6 @@
 import tf1planer from './pkg/planer.js'
 import tf1filesEmulator from './pkg/filesEmulator.js'
+import { tf1vm, tf1compiler } from './components/vm-compiler/index.js'
 
 const tf1 = {
     'metadata': {
