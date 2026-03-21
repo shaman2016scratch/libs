@@ -6,9 +6,9 @@ const _3Dmath = {
         'plusA': function(a,b,p) { return ((a+p)+b)*2 },
         'plusB': function(a,b,p) { return (a+(b+p))*2 },
         'plusAB': function(a,b,p1,p2) { return ((a+p1)+(b+p2))*2 },
-        'minusA': function(a,b,m) { return ((a-p)+b)*2 },
-        'minusB': function(a,b,m) { return (a+(b-p))*2 },
-        'minusAB': function(a,b,m1,m2) { return ((a-p1)+(b-p2))*2 },
+        'minusA': function(a,b,m) { return ((a-m)+b)*2 },
+        'minusB': function(a,b,m) { return (a+(b-m))*2 },
+        'minusAB': function(a,b,m1,m2) { return ((a-m1)+(b-m2))*2 },
     },
     'S': {
         'plusA': function(a,b,p) { return (a+p)*b },
@@ -34,6 +34,8 @@ const _3Dmath = {
         'minusBC': function(a,b,c,m1,m2) { return a*(b-m1)*(c-m2) },
         'minusABC': function(a,b,c,m1,m2,m3) { return (a-m1)*(b-m2)*(c-m3) },
     },
+    'XYZ': {},
+    'create3dIn2d': {},
 }
 
 export { _3Dmath }
