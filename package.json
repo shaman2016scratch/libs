@@ -3,6 +3,8 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
-  "dependencies": {},
+  "dependencies": {
+    "blogs8787api.js": "github:shaman2016scratch/blogs8787api.js#main"
+  },
   "devDependencies": {}
 }
