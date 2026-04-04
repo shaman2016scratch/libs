@@ -29,7 +29,7 @@ const dataPack = {
                 ${jsonData?.data || {}}
             `
         },
-        'htmlobject': async function(jsonData) {
+        'htmlObject': async function(jsonData) {
             let ret = `
               <html>
             `
@@ -38,6 +38,13 @@ const dataPack = {
               </html>
             `
         },
+        'Async': function(code, params) {
+            return new Function(params, `
+                retun async function() {
+                    ${code}
+                }
+            `)
+        }
     },
     '3dBlock': {
         '': '<DATAPACK CLASS "3dBlock" {...}>'
@@ -45,6 +52,12 @@ const dataPack = {
     '3dBlock2': {
         '': '<DATAPACK CLASS "3dBlock2" {...}>'
     },
+    'htmlObject': {
+        '': '<DATAPACK CLASS "htmlObject" {...}>'
+    },
+    'Async': {
+        '': '<DATAPACK CLASS "Async" {...}>'
+    }
 }
 
 export { dataPack }
