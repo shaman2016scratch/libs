@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
+  "license": "MIT",
   "dependencies": {
     "blogs8787api.js": "github:shaman2016scratch/blogs8787api.js#main"
   },
