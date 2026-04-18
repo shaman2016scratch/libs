@@ -30,7 +30,7 @@ const fixMath = {
 const getMathParams = {
     isDrob: function(number) {
         let result
-        let decode = number.split['.']
+        let decode = number.split('.')
         if (!decode[1]) {
             result = false
         } else {
@@ -45,7 +45,7 @@ const getMathParams = {
     getDrob: function(num) {
         function isDrob(number) {
             let result
-            let decode = number.split['.']
+            let decode = number.split('.')
             if (!decode[1]) {
                 result = false
             } else {
@@ -61,7 +61,7 @@ const getMathParams = {
         if (!isDrob(num)) {
             ret = undefined
         } else {
-            ret = number.split['.'][1]
+            ret = number.split('.')[1]
         }
         return ret
     }
